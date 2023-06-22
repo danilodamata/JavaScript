@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area {
+            font: normal 20pt arial;
+            background: green;
+            color: rgb(5, 4, 4);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        #dam {
+            font: normal 30pt Times;
+            background: rgb(20, 165, 184);
+            color: white;
+            width: 800px;
+            height: 800px;
+            line-height: 800px;
+            text-align: center;
+            margin-left: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja
+    </div>
+
+    <div id="dam">
+        Cosmovisao
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        
+
+        function clicar(){
+            a.innerText = 'Pare!'
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'Atencao!'
+            a.style.background = 'yellow'            
+        }
+
+        function sair(){
+            a.innerText = 'Siga!'
+            a.style.background = 'green'
+        }       
+    </script>
+
+    <script>
+        var b = window.document.getElementById('dam')
+        b.addEventListener('click', criar)
+        b.addEventListener('mouseenter', salvar)
+        b.addEventListener('mouseout', queda)
+
+        function criar(){
+            b.innerText = 'No principio criou Deus os ceus e a Terra!'
+        }
+
+        function queda(){
+            b.innerText = 'Todos pecaram e nao alcancam o padrao da gloria de Deus!'
+         }
+
+         function salvar(){
+            b.innerText = 'Pela graca sois salvos mediante a fe!'
+         }
+
+    </script>
+
+
+</body>
+</html>

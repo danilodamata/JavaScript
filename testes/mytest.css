@@ -1,0 +1,13 @@
+h1 {
+    font: normal 50pt Arial;
+    color: rgb(78, 9, 105);
+}
+
+h3 {
+    font: normal 25pt Arial;
+}
+
+input {
+    background-color: rgb(204, 139, 139);
+    font: normal 20pt Arial;
+    }
